@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    private GameObject StartButton;
+    private GameObject SettingsButton;
+    private GameObject QuitButton;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject StartButton;
+
     }
 
     // Update is called once per frame
