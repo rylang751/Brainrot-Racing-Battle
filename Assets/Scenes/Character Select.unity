@@ -308,7 +308,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 115134141}
-  - component: {fileID: 115134142}
   - component: {fileID: 115134143}
   m_Layer: 0
   m_Name: GameManager
@@ -331,20 +330,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &115134142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115134140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9cb6d9c143e4bad8bd55246ea13a66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabA: {fileID: 0}
-  prefabB: {fileID: 0}
 --- !u!114 &115134143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,11 +343,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 0}
-  prefabsToInstantiate:
-  - {fileID: 1236308482056108908, guid: 17c3c075ced674bebb0cf20886f709dc, type: 3}
-  - {fileID: 5645241966263877246, guid: 1be8a1b2f1a1d445ab8a7d0d096a92ed, type: 3}
+  uiButtons:
+  - {fileID: 1960327348}
+  - {fileID: 1321966764}
+  - {fileID: 271613262}
+  - {fileID: 2032749990}
+  characterPrefabs:
   - {fileID: 8033482623648060274, guid: dc6dc888252f24b9ba846735eb48dafb, type: 3}
+  - {fileID: 1236308482056108908, guid: 17c3c075ced674bebb0cf20886f709dc, type: 3}
   - {fileID: 7288606970523469434, guid: f6c0a2ef3a9554b18a517c42bb99e945, type: 3}
+  - {fileID: 5645241966263877246, guid: 1be8a1b2f1a1d445ab8a7d0d096a92ed, type: 3}
 --- !u!1 &257331428
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,28 +565,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 257331433}
-        m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
-        m_MethodName: OnButtonClick
+      - m_Target: {fileID: 115134143}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadSceneAndSpawnPrefabs
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 257331433}
-        m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
-        m_MethodName: Startrace
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Test Level
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &271613263
@@ -988,28 +966,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 257331433}
-        m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
-        m_MethodName: OnButtonClick
+      - m_Target: {fileID: 115134143}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadSceneAndSpawnPrefabs
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 257331433}
-        m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
-        m_MethodName: Startrace
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Test Level
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1321966765
@@ -1347,18 +1313,6 @@ MonoBehaviour:
           m_StringArgument: Test Level
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneLoaderAndSpawner, Assembly-CSharp
-        m_MethodName: LoadSceneAndSpawnPrefabs
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1960327349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1639,28 +1593,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 257331433}
-        m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
-        m_MethodName: OnButtonClick
+      - m_Target: {fileID: 115134143}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadSceneAndSpawnPrefabs
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 257331433}
-        m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
-        m_MethodName: Startrace
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Test Level
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2032749991

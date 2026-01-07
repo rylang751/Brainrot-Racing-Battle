@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CharacterSelect : MonoBehaviour
 {
@@ -25,15 +26,11 @@ public class CharacterSelect : MonoBehaviour
 
    public static string[] characterNames;
 
+   public static string selectedCharacter;
+
     // Start is called before the first frame update
     void Start()
     {
-        // all characters able to be selected
-        SharkButton.onClick.AddListener(() => OnButtonClick("SharkButton"));
-        BallerinaButton.onClick.AddListener(() => OnButtonClick("BallerinaButton"));
-        TreeButton.onClick.AddListener(() => OnButtonClick("TreeButton"));
-        MonkeyButton.onClick.AddListener(() => OnButtonClick("MonkeyButton"));
-
       characterNames = new string[] {"characters"};
       Debug.Log("Character selected");
     }
@@ -46,29 +43,11 @@ public class CharacterSelect : MonoBehaviour
 
     public void Startrace()
     {
+        Debug.Log(EventSystem.current.currentSelectedGameObject.name);
+        selectedCharacter = EventSystem.current.currentSelectedGameObject.name;
         SceneManager.LoadScene("Test Level");
     }
 
-    public void OnButtonClick(string buttonName)
-    {
-        // allows all characters to be clicken in one method
-        if (buttonName == "SharkButton")
-        {
-            Debug.Log("SharkButton was clicked");
-        }
-        else if(buttonName == "BallerinaButton")
-        {
-            Debug.Log("BallerinaButton was clicked");
-        }
-        else if(buttonName == "TreeButton")
-        {
-            Debug.Log("TreeButton was clicked");
-        }
-        else if(buttonName == "MonkeyButton")
-        {
-            Debug.Log("MonkeyButton was clicked");
-        }
-    }
 
 
 

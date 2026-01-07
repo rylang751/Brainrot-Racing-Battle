@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1945849544141898832}
-  - component: {fileID: -908664068653160598}
+  - component: {fileID: -6572948703761435583}
   m_Layer: 0
   m_Name: Ballerina
   m_TagString: Untagged
@@ -31,14 +31,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-908664068653160598
+--- !u!114 &-6572948703761435583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236308482056108908}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4b36494701b14a17b50ed9b8d250a0b, type: 3}
   m_Name: 

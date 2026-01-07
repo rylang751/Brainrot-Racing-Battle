@@ -1,10 +1,6 @@
 {
-<<<<<<< Updated upstream
-	"process_id" : 930,
-=======
-	"process_id" : 3127,
->>>>>>> Stashed changes
+	"process_id" : 2003,
 	"version" : "2020.3.27f1",
-	"app_path" : "/Applications/2020.3.27f1/Unity.app",
-	"app_contents_path" : "/Applications/2020.3.27f1/Unity.app/Contents"
+	"app_path" : "/private/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/80D06AE8-1927-4BE7-808E-D4A96A0ECEF2/d/Unity.app",
+	"app_contents_path" : "/private/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/80D06AE8-1927-4BE7-808E-D4A96A0ECEF2/d/Unity.app/Contents"
 }
