@@ -11,7 +11,7 @@ Using pre-set license
 Pro License: NO
 
 COMMAND LINE ARGUMENTS:
-/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29/d/Unity.app/Contents/MacOS/Unity
+/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352/d/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
@@ -22,57 +22,57 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55449
+55481
 Successfully changed project path to: /Users/game56/Documents/GitHub/Brainrot-Racing-Battle
 Could not lock editor preferences. Preferences updates for this instance of Unity will not be saved./Users/game56/Documents/GitHub/Brainrot-Racing-Battle
 Using Asset Import Pipeline V2.
-Error (Result too large) occured whilst enumerating /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29
-Refreshing native plugins compatible for Editor in 37.68 ms, found 3 plugins.
+Error (Result too large) occured whilst enumerating /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352
+Refreshing native plugins compatible for Editor in 32.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
-[Subsystems] Discovering subsystems at path /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29/d/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352/d/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/game56/Documents/GitHub/Brainrot-Racing-Battle/Assets
 GfxDevice: creating device client; threaded=0
-2026-01-12 13:44:14.498 Unity[4958:176626] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
-2026-01-12 13:44:14.498 Unity[4958:176626] Metal devices available: 1
-2026-01-12 13:44:14.498 Unity[4958:176626] 0: AMD Radeon Pro 5500 XT (high power)
-2026-01-12 13:44:14.498 Unity[4958:176626] Using device AMD Radeon Pro 5500 XT (high power)
+2026-01-27 14:02:16.379 Unity[14455:912993] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
+2026-01-27 14:02:16.379 Unity[14455:912993] Metal devices available: 1
+2026-01-27 14:02:16.379 Unity[14455:912993] 0: AMD Radeon Pro 5500 XT (high power)
+2026-01-27 14:02:16.379 Unity[14455:912993] Using device AMD Radeon Pro 5500 XT (high power)
 Initializing Metal device caps: AMD Radeon Pro 5500 XT
 Initialize mono
-Mono path[0] = '/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29/d/Unity.app/Contents/Managed'
-Mono path[1] = '/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29/d/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29/d/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56958
+Mono path[0] = '/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352/d/Unity.app/Contents/Managed'
+Mono path[1] = '/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352/d/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352/d/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56455
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29/d/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000557 seconds.
+Register platform support module: /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352/d/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000569 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 32.18 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 33.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.525 seconds
+- Completed reload, in  0.524 seconds
 Domain Reload Profiling:
-	ReloadAssembly (525ms)
-		BeginReloadAssembly (37ms)
+	ReloadAssembly (524ms)
+		BeginReloadAssembly (36ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (423ms)
-			LoadAssemblies (36ms)
+		EndReloadAssembly (424ms)
+			LoadAssemblies (35ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (156ms)
+			SetupTypeCache (153ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (160ms)
+			SetupLoadedEditorAssemblies (164ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (32ms)
+				RefreshPlugins (33ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadAttributes (93ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -80,43 +80,43 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004095 seconds.
+Registered in 0.001899 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.984 seconds
+- Completed reload, in  1.017 seconds
 Domain Reload Profiling:
-	ReloadAssembly (985ms)
-		BeginReloadAssembly (131ms)
+	ReloadAssembly (1018ms)
+		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (800ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (828ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (299ms)
+			SetupTypeCache (303ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (280ms)
+			SetupLoadedEditorAssemblies (317ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (19ms)
 				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadAttributes (215ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.002697 seconds.
+Validating Project structure ... 0.002958 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.016143 seconds.
+Upgrading shader files ...0.012305 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -125,7 +125,7 @@ Application.AssetDatabase.Refresh Start
 Application.AssetDatabase.Refresh End
 RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
 RefreshProfiler: Total: 0.000ms
-Launching external process: /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/957CB57B-C4C0-4A54-824C-FEA63F013E29/d/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/6D8ADDDF-DDB0-478D-ACC1-14E70EA10352/d/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Initializing Unity extensions:
 ========================================================================
@@ -134,10 +134,10 @@ Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2287 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 217.3 MB.
-System memory in use after: 216.4 MB.
+System memory in use after: 216.5 MB.
 
 Unloading 154 unused Assets to reduce memory usage. Loaded Objects now: 2754.
-Total: 2.869058 ms (FindLiveObjects: 0.170776 ms CreateObjectMapping: 0.087064 ms MarkObjects: 2.158288 ms  DeleteObjects: 0.452175 ms)
+Total: 2.747511 ms (FindLiveObjects: 0.152574 ms CreateObjectMapping: 0.080655 ms MarkObjects: 2.080618 ms  DeleteObjects: 0.433103 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -151,16 +151,24 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Models/ballerina_capuchina (1).zip
-  artifactKey: Guid(1d7cb6afaacac496ea1d1c1106537f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/ballerina_capuchina (1).zip using Guid(1d7cb6afaacac496ea1d1c1106537f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3a718792ac8ff5402c529f828ee711') in 1.196762 seconds 
-  Import took 1.202730 seconds .
+  path: Assets/Models/Surprising Blad
+  artifactKey: Guid(325157ba331b0445ba89bf75880e2022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Surprising Blad using Guid(325157ba331b0445ba89bf75880e2022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d323dd602c5efc0d46296bb4f0f42d8') in 0.004202 seconds 
+  Import took 0.006611 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.996114 seconds.
-  path: Assets/Models/tinker.obj
-  artifactKey: Guid(fda2e965a28ae43b3af5af273fa8d5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/tinker.obj using Guid(fda2e965a28ae43b3af5af273fa8d5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9d65ee7b783133c88fac71157072e3') in 2.540629 seconds 
-  Import took 2.550882 seconds .
+  Time since last request: 0.000135 seconds.
+  path: Assets/Models/Surprising Blad/tinker.obj
+  artifactKey: Guid(70eae39d0b4734f98803d1a2e89b40d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Surprising Blad/tinker.obj using Guid(70eae39d0b4734f98803d1a2e89b40d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232db5affe73888eeb3db8cd89fc2583') in 2.310206 seconds 
+  Import took 2.315724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.968656 seconds.
+  path: Assets/Models/Surprising Blad/tinker 1.obj
+  artifactKey: Guid(15819018f994d48dd95a771493437c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Surprising Blad/tinker 1.obj using Guid(15819018f994d48dd95a771493437c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69cba8dcb16ac49ae468bac4333d8f1a') in 0.023972 seconds 
+  Import took 0.026960 seconds .
 
