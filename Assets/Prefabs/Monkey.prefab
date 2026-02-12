@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 2931854892938545017}
   - component: {fileID: 7805224646241778016}
   - component: {fileID: 3103551510151867478}
+  - component: {fileID: -2192512675495894964}
   m_Layer: 0
   m_Name: Monkey
   m_TagString: Untagged
@@ -214,6 +215,19 @@ MonoBehaviour:
   carSpeed: 0
   isDrifting: 0
   isTractionLocked: 0
+--- !u!114 &-2192512675495894964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592906602875428291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b36494701b14a17b50ed9b8d250a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &2669803944288999417
 GameObject:
   m_ObjectHideFlags: 0

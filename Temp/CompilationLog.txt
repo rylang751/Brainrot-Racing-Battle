@@ -1,0 +1,2 @@
+# Starting compiling Assembly-CSharp.dll
+/private/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/D6872CC5-6332-48C6-93AF-01F3E320B98C/d/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-127ab3161c6a2468f9f834808e435d57

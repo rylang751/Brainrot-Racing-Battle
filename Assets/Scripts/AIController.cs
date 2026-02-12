@@ -1,30 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI; 
+using UnityEngine.AI;
 
 public class AIController : MonoBehaviour
 {
-    private NavMeshAgent agent; 
-    private Transform playerTarget;
+    public List<Transform> waypoints; // Drag your track points here
+    public float arrivalDistance = 3.0f; 
 
-    // Start is called before the first frame update
+    private NavMeshAgent agent;
+    private int currentWaypointIndex = 0;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-        if (playerObject!= null)
+
+        if (waypoints.Count > 0)
         {
-            playerTarget = playerObject.transform;
+            agent.SetDestination(waypoints[0].position);
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (playerTarget != null && agent.isActiveAndEnabled)
+        if (waypoints.Count == 0 || !agent.isActiveAndEnabled) return;
+
+        // Move to next waypoint when close enough
+        if (!agent.pathPending && agent.remainingDistance < arrivalDistance)
         {
-            agent.SetDestination(playerTarget.position);
+            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
+            agent.SetDestination(waypoints[currentWaypointIndex].position);
         }
     }
 }
