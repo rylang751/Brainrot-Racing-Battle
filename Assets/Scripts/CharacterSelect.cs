@@ -45,7 +45,7 @@ public class CharacterSelect : MonoBehaviour
     {
         Debug.Log(EventSystem.current.currentSelectedGameObject.name);
         selectedCharacter = EventSystem.current.currentSelectedGameObject.name;
-        SceneManager.LoadScene("Test Level");
+        SceneManager.LoadScene("Gameplay");
     }
 
 

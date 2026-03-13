@@ -19,7 +19,7 @@ public class SceneLoaderAndSpawner : MonoBehaviour
            
            
             // Load the target scene (make sure scene name matches)
-            GameManager.Instance.LoadSceneAndSpawnPrefabs("Test Level");
+            GameManager.Instance.LoadSceneAndSpawnPrefabs("Gameplay");
         }
     }
 }
