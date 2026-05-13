@@ -1,4 +1,0 @@
-# Starting compiling Assembly-CSharp.dll
-/private/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/C3058BAF-2F62-4AB6-BABB-771670627A98/d/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b9d572d045c64448baebaac77bca4eca
-# Starting compiling Assembly-CSharp-Editor.dll
-/private/var/folders/9b/thq_92613694g0y93dkflhcw0000gv/T/AppTranslocation/C3058BAF-2F62-4AB6-BABB-771670627A98/d/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a9007a8e0389246c8b706c341797c932

@@ -30,32 +30,32 @@ public class LapManager : MonoBehaviour
             Debug.Log("Checkpoint " + index + " cleared!");
         }
     }
-
+    
     private void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("Player"))
     {
-        if (other.CompareTag("Player"))
+        // Require ALL checkpoints to be cleared (e.g., if total is 3, next required must be 4)
+        if (nextCheckpointRequired > totalCheckpoints)
         {
-            // Check if player has visited ALL checkpoints before crossing finish line
-            if (nextCheckpointRequired > totalCheckpoints)
+            if (currentLap >= totalLaps)
             {
-                if (currentLap >= totalLaps)
-                {
-                    EndGame();
-                }
-                else
-                {
-                    currentLap++;
-                    // Reset checkpoint requirement for the new lap
-                    nextCheckpointRequired = 1; 
-                    UpdateLapUI();
-                }
+                EndGame();
             }
             else
             {
-                Debug.Log("Lap not counted: You missed checkpoints!");
+                currentLap++;
+                nextCheckpointRequired = 1; // Reset for next lap
+                UpdateLapUI();
+                Debug.Log("Lap advanced to: " + currentLap);
             }
         }
+        else
+        {
+            Debug.Log(" Lap not counted! Missing checkpoints. Next needed: " + nextCheckpointRequired);
+        }
     }
+}
 
     void UpdateLapUI()
     {

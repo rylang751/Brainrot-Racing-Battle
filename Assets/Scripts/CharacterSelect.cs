@@ -8,47 +8,41 @@ using UnityEngine.EventSystems;
 
 public class CharacterSelect : MonoBehaviour
 {
-    // button gameobjects
-   public Button SharkButton;
-   public Button BallerinaButton;
-   public Button TreeButton;
-   public Button MonkeyButton;
+    public Button SharkButton;
+    public Button BallerinaButton;
+    public Button TreeButton;
+    public Button MonkeyButton;
+    
+    // Add a reference for your Quit Button if you want to control it via code
+    public Button QuitButton; 
 
-   public static CharacterSelect Instance { get; private set; }
-   public GameObject selectedCharacterPrefab; 
-    // character prefabs to be spawned in
-   public GameObject SharkPrefab;
-   public GameObject BallerinaPrefab;
-   public GameObject TreePrefab;
-   public GameObject MonkeyPrefab;
+    public static CharacterSelect Instance { get; private set; }
+    public GameObject selectedCharacterPrefab; 
+    
+    public GameObject SharkPrefab;
+    public GameObject BallerinaPrefab;
+    public GameObject TreePrefab;
+    public GameObject MonkeyPrefab;
 
-   public UnityEvent m_MyEvent = new UnityEvent();
+    public UnityEvent m_MyEvent = new UnityEvent();
+    public static string[] characterNames;
+    public static string selectedCharacter;
 
-   public static string[] characterNames;
-
-   public static string selectedCharacter;
-
-    // Start is called before the first frame update
     void Start()
     {
-      characterNames = new string[] {"characters"};
-      Debug.Log("Character selected");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-     
+        characterNames = new string[] {"characters"};
     }
 
     public void Startrace()
     {
-        Debug.Log(EventSystem.current.currentSelectedGameObject.name);
         selectedCharacter = EventSystem.current.currentSelectedGameObject.name;
         SceneManager.LoadScene("Gameplay");
     }
 
-
-
-
+    // New method to go back to the previous scene
+    public void QuitToMenu()
+    {
+        // Replace "MainMenu" with the exact name of your previous scene
+        SceneManager.LoadScene("Menu"); 
+    }
 }
