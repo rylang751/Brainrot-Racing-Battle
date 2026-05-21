@@ -476,14 +476,10 @@ MonoBehaviour:
   TreeButton: {fileID: 271613262}
   MonkeyButton: {fileID: 2032749990}
   QuitButton: {fileID: 0}
-  selectedCharacterPrefab: {fileID: 0}
   SharkPrefab: {fileID: 1046741522797937041, guid: dc6dc888252f24b9ba846735eb48dafb, type: 3}
   BallerinaPrefab: {fileID: 3189862237537162740, guid: 17c3c075ced674bebb0cf20886f709dc, type: 3}
   TreePrefab: {fileID: 9197201283669361404, guid: f6c0a2ef3a9554b18a517c42bb99e945, type: 3}
   MonkeyPrefab: {fileID: 2592906602875428291, guid: 1be8a1b2f1a1d445ab8a7d0d096a92ed, type: 3}
-  m_MyEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &271613260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,19 +1510,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1960327349}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 115134143}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadSceneAndSpawnPrefabs
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Jah-Ziere Gameplay
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1960327349
 MonoBehaviour:
   m_ObjectHideFlags: 0

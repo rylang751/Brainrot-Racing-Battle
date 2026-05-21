@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Events;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 
 public class CharacterSelect : MonoBehaviour
 {
@@ -12,37 +10,62 @@ public class CharacterSelect : MonoBehaviour
     public Button BallerinaButton;
     public Button TreeButton;
     public Button MonkeyButton;
-    
-    // Add a reference for your Quit Button if you want to control it via code
     public Button QuitButton; 
 
     public static CharacterSelect Instance { get; private set; }
-    public GameObject selectedCharacterPrefab; 
+    public static GameObject SelectedCharacterPrefab; 
     
     public GameObject SharkPrefab;
     public GameObject BallerinaPrefab;
     public GameObject TreePrefab;
     public GameObject MonkeyPrefab;
 
-    public UnityEvent m_MyEvent = new UnityEvent();
-    public static string[] characterNames;
-    public static string selectedCharacter;
+    public static string SelectedCharacterName;
+
+    void Awake()
+    {
+        // Fail-safe: Force time back to normal instantly when scene initializes
+        Time.timeScale = 1f;
+        PauseMenu.gameIsPaused = false;
+        
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        if (Instance == null) { Instance = this; }
+    }
 
     void Start()
     {
-        characterNames = new string[] {"characters"};
+        // Re-bind listeners safely via code execution
+        if (SharkButton != null)     SharkButton.onClick.AddListener(() => SetCharacter(SharkPrefab, "Shark"));
+        if (BallerinaButton != null) BallerinaButton.onClick.AddListener(() => SetCharacter(BallerinaPrefab, "Ballerina"));
+        if (TreeButton != null)      TreeButton.onClick.AddListener(() => SetCharacter(TreePrefab, "Tree"));
+        if (MonkeyButton != null)    MonkeyButton.onClick.AddListener(() => SetCharacter(MonkeyPrefab, "Monkey"));
+        if (QuitButton != null)      QuitButton.onClick.AddListener(QuitToMenu);
     }
 
-    public void Startrace()
+    private void SetCharacter(GameObject prefab, string name)
     {
-        selectedCharacter = EventSystem.current.currentSelectedGameObject.name;
-        SceneManager.LoadScene("Gameplay");
+        SelectedCharacterPrefab = prefab;
+        SelectedCharacterName = name;
+        StartRace();
+    }
+    public void StartRace()
+    {
+        try
+        {
+            // Changed from "Gameplay" to your exact scene name
+            SceneManager.LoadScene("Jah-Ziere Gameplay");
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Scene loading failed! Error: " + e.Message);
+        }
     }
 
-    // New method to go back to the previous scene
     public void QuitToMenu()
     {
-        // Replace "MainMenu" with the exact name of your previous scene
-        SceneManager.LoadScene("Menu"); 
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu"); // Ensure your main menu scene is exactly named "Menu"
     }
 }
